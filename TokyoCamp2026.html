@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';">
     <title>東京名校文化探索計劃 2026</title>
     
     <!-- 引入 React 和 ReactDOM -->
@@ -1632,8 +1633,7 @@
         };
 
         const root = ReactDOM.createRoot(document.getElementById('root'));
-        // 暫時把 ScheduleApp 換成一個簡單的文字
-        root.render(<h1>測試成功！</h1>);
+        root.render(<ScheduleApp />);
     </script>
 </body>
 </html>
