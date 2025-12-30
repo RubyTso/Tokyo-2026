@@ -130,6 +130,8 @@
         const homeMap = "https://maps.app.goo.gl/E5uwXFYXEGbFAJt79";
         const organizerImage = "images/organizer.jpg";
         const logoImage = "images/logo.png";
+        const utokyoTSALogo = "images/logo_utokyo_tsa.png";
+        const keioTSALogo = "images/logo_keio_tsa.png";
 
         const schedule = [
         {
@@ -1154,6 +1156,33 @@
                     </p>
                     </div>
                 </div>
+
+                    {/* Co-Organizer Section */}
+                    <div className="bg-[#FAF8F5] rounded-xl p-6 border border-[#E8E4D9] mt-6">
+                    <h2 className="text-xl font-serif font-bold text-stone-800 mb-6 flex items-center justify-center">
+                        <Icon name="Users" className="mr-2 text-stone-600" size={24} />
+                        協辦單位
+                    </h2>
+                        <div className="flex flex-col items-center text-center">
+                        <div className="w-20 h-20 rounded-full overflow-hidden mb-3 border-2 border-white shadow-sm bg-white p-1">
+                            <img src={utokyoTSALogo} alt="東京大學台灣留學生會" className="w-full h-full object-cover" />
+                        </div>
+                        <h3 className="font-bold text-stone-800 mb-2">東京大學台灣留學生會</h3>
+                        <p className="text-sm text-stone-600 leading-relaxed text-justify">
+                            由就讀於東京大學的台灣留學生組成，透過舉辦學術分享與文化交流活動，協助留學生適應校園生活，並促進台日之間的友好情誼與知識連結。
+                        </p>
+
+                        <div className="w-20 h-20 rounded-full overflow-hidden mb-3 border-2 border-white shadow-sm bg-white p-1">
+                            <img src={keioTSALogo} alt="慶應義塾大學台灣留學生會" className="w-full h-full object-cover" />
+                        </div>
+                        <h3 className="font-bold text-stone-800 mb-2">慶應義塾大學台灣留學生會</h3>
+                        <p className="text-sm text-stone-600 leading-relaxed text-justify">
+                            匯聚慶應義塾大學的台灣學子，傳承校訓精神。提供生活資訊分享、職涯發展交流及各式聯誼活動，是台灣留學生在異鄉最溫暖堅強的後盾與夥伴。
+                        </p>
+                        </div>
+                </div>
+                </div>
+                    
                 </div>
             );
         };
